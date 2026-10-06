@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>曼谷 11/10–11/15 行程</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<style>
+:root{--bg:#F2F4F1;--card:#FFFFFF;--ink:#1B2A29;--mute:#5C6B69;--line:#D5DCD8;--jade:#1F7A6B;--accent:#8F6100;
+--sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;
+--fs-xs:12px;--fs-sm:14px;--fs-md:16px;--fs-lg:18px;--fs-xl:24px;
+--r-sm:6px;--r-md:10px;--r-pill:999px;--tap:44px;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121A19;--card:#1B2625;--ink:#E8EFEC;--mute:#9AAAA6;--line:#2C3B39;--jade:#4CC3AD;--accent:#E3B04B}}
+:root[data-theme="dark"]{--bg:#121A19;--card:#1B2625;--ink:#E8EFEC;--mute:#9AAAA6;--line:#2C3B39;--jade:#4CC3AD;--accent:#E3B04B}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.65}
+main{max-width:640px;margin:0 auto;padding:var(--sp-5) var(--sp-4) 56px}
+h1{font-size:clamp(34px,9vw,52px);font-weight:900;line-height:1.1;margin:var(--sp-2) 0 6px}
+.sub{color:var(--mute);margin:0 0 var(--sp-5)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-3);margin-bottom:var(--sp-6)}
+.facts div{border-left:3px solid var(--jade);padding-left:var(--sp-3);font-size:var(--fs-sm);color:var(--mute)}
+.facts b{display:block;color:var(--ink);font-size:15px}
+.day{margin-bottom:var(--sp-6)}
+.day-head{display:flex;align-items:baseline;gap:var(--sp-3);border-bottom:2px solid var(--ink);padding-bottom:6px}
+.day-date{font-size:var(--fs-xl);font-weight:900}
+.day-theme{color:var(--jade);font-weight:700}
+.day-note{font-size:var(--fs-sm);color:var(--mute);margin:6px 0 var(--sp-1)}
+ul{list-style:none;margin:0;padding:0}
+.stop{display:grid;grid-template-columns:var(--tap) 56px 1fr;gap:var(--sp-2);padding:var(--sp-3) 0;border-bottom:1px solid var(--line);align-items:start}
+.stop-check{width:24px;height:24px;margin:10px 10px;accent-color:var(--jade);cursor:pointer}
+.stop-time{color:var(--accent);font-weight:700;font-size:var(--fs-sm);padding-top:var(--sp-2)}
+.stop-name{font-weight:700;font-size:var(--fs-lg);padding-top:var(--sp-1)}
+.stop-name a{color:inherit;text-decoration:underline;text-decoration-color:var(--jade);text-underline-offset:4px;text-decoration-thickness:2px}
+.stop-name a:hover{color:var(--jade)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.stop.is-done .stop-name{text-decoration:line-through;opacity:.6}
+.stop-desc{font-size:var(--fs-sm);color:var(--mute)}
+.alt-tag{display:inline-block;margin-left:var(--sp-2);font-size:var(--fs-xs);font-weight:500;color:var(--accent);border:1px solid var(--accent);border-radius:var(--r-sm);padding:0 6px;vertical-align:2px}
+.swap-btn,.route-btn{display:inline-flex;align-items:center;justify-content:center;min-height:var(--tap);font:inherit;font-size:var(--fs-sm);font-weight:500;color:var(--jade);background:transparent;border:1.5px solid var(--jade);border-radius:var(--r-pill);padding:0 var(--sp-4);cursor:pointer;text-decoration:none;margin-top:var(--sp-2)}
+.swap-btn:hover,.route-btn:hover{background:var(--jade);color:var(--bg)}
+.swap-btn:active,.route-btn:active{transform:translateY(1px)}
+.route-btn{margin-top:var(--sp-4);margin-right:var(--sp-2)}
+.home-btn{color:var(--accent);border-color:var(--accent)}
+.home-btn:hover{background:var(--accent);color:var(--bg)}
+.info{font-size:var(--fs-sm);color:var(--mute);margin:var(--sp-3) 0 0}
+.info b{color:var(--ink)}
+.callout{background:var(--card);border:1px dashed var(--line);border-radius:var(--r-md);padding:var(--sp-4);font-size:15px}
+.callout--note{border-style:solid;font-size:var(--fs-sm);color:var(--mute);border:0}
+.callout--note b{color:var(--ink)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+footer{margin-top:var(--sp-5);font-size:var(--fs-xs);color:var(--mute)}
+@media print{:root{--bg:#fff;--card:#fff;--ink:#000;--mute:#333;--line:#bbb;--jade:#145a4e;--accent:#6b4900}.swap-btn,.stop-check{display:none}.route-btn{border:0;min-height:0;padding:0;margin-right:var(--sp-4);text-decoration:underline;color:var(--jade)}.home-btn{color:var(--accent)}.stop{grid-template-columns:56px 1fr}.day{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main>
+<h1>曼谷 5 天</h1>
+<p class="sub">2026/11/10（二）– 11/15（日）　每天 2–3 個點，慢慢逛</p>
+<div class="facts">
+<div><b>住宿位置</b>烏棟蘇一帶</div>
+<div><b>回程</b>11/15 13:00 起飛</div>
+<div><b>交通</b>市區搭 BTS，舊城區搭 Grab，11/13 包車</div>
+<div><b>包車日</b>11/13 北攬府一日遊</div>
+</div>
+<div id="days"></div>
+<section class="callout callout--note"><b>還沒排進去的地點</b><br>河對岸 Thonburi：<a href="http://maps.google.com/?cid=16356595055501497370" target="_blank" rel="noopener">AantArm Cafe</a>、<a href="http://maps.google.com/?cid=1209476392033675019" target="_blank" rel="noopener">水門寺</a>、<a href="http://maps.google.com/?cid=12921756033184211768" target="_blank" rel="noopener">藝術之家</a>、<a href="http://maps.google.com/?cid=2458010175474301461" target="_blank" rel="noopener">Indy Market Dao Khanong</a><br>北邊：<a href="http://maps.google.com/?cid=6775161292345137902" target="_blank" rel="noopener">Bang Sue Junction Shopping Center</a>、<a href="http://maps.google.com/?cid=2716792921386344829" target="_blank" rel="noopener">Poncharoen Hua Pla</a><br><br><b>怎麼用</b><br>勾選框可記錄走過的地點，換一個可切換替代選項，每天的路線按鈕會依目前選擇開啟 Google 地圖。</section>
+<footer>營業時間和公休日請點地點名稱到 Google 地圖確認。車程為粗估，實際依路況。切換和勾選只存在你自己的裝置上。</footer>
+<div id="live" class="sr" role="status" aria-live="polite"></div>
+</main>
+<script>
+var M="http://maps.google.com/?cid=";
+var D=[
+{d:"11/10 二",th:"抵達日，住處附近",note:"到達時間不確定，先排輕鬆的。",
+ride:"兩站相距很近，步行即可。",rain:"兩站都有室內空間，影響不大。",s:[
+["傍晚","和成豐","在住處附近吃晚餐","7048271266045733639","13.6905371,100.6086412",[["木瓜園林餐廳","同樣在住處附近的 Bang Chak，不想吃和成豐時可以換","12826518328455992672","13.6853100,100.6211196"]]],
+["晚上","Thai Massage by MIW","吃完飯順路按摩，放鬆一下","4958875744802946364","13.6912544,100.6078124"]]},
+{d:"11/11 三",th:"舊城區、Song Wat 咖啡和唐人街",note:"從住處搭 Grab 過去，之後三站都在同一帶。",
+ride:"住處到大皇宮約 40–60 分，大皇宮到 Song Wat 約 15–25 分，Song Wat 到唐人街步行約 5–10 分。",rain:"大皇宮是戶外，雨大時可晚點去，Song Wat 的咖啡廳和唐人街的店家可以躲雨。",s:[
+["上午","曼谷大皇宮","約 15:30 關門，需穿長褲或過膝服裝","3056950040631135297","13.7498558,100.4915765",[["The Reclining Buddha（臥佛寺）","就在大皇宮旁邊，可步行前往，也可以兩個都去","1664761078418654335","13.7465252,100.4916607"],["MEA SPARK","在河邊，靠近 Memorial Bridge 一帶，出發前確認營業時間","5765475491216722625","13.7414284,100.4995870"],["The King Prajadhipok Park","在河邊，靠近 Memorial Bridge 一帶","15856753971546994072","13.7406104,100.4991290"]]],
+["下午","SCR - Song Wat Coffee Roasters","在 Song Wat 路，離唐人街步行可達","1231426595683538115","13.7391467,100.5066564",[["Midsummer Cafe & Roastery SONGWAT","在 Yaowaphanit 路，同一帶","4513582846791582857","13.7388173,100.5077018"],["Copenn Songwat","在 Song Wat 路，同一帶","7038897269162341307","13.7383772,100.5068311"],["CÉRÉMONIALE Matcha Atelier","在 Song Wat 路，同一帶","11409197209084965710","13.7383641,100.5071596"],["I Found Something Good","在 Yaowaphanit 路，同一帶","15054925639151562257","13.7387410,100.5077695"],["Hit the road","在 Chakkrawat 一帶，同一帶","11629701041013786540","13.7379638,100.5068123"]]],
+["傍晚","唐人街","天黑後小吃攤最熱鬧","6365829341215025876","13.7408624,100.5086773",[["金佛寺","在 Talat Noi 一帶，離唐人街不遠","16356979730288169593","13.7377075,100.5134545"],["Gu Long Bao","在 Song Wat 路，同一帶","1605680065537485862","13.7379623,100.5079789"],["The Mustang Blu","晚餐後順路過去，在 Maitri Chit 路","2803243192077632842","13.7392640,100.5148722"],["ICONSIAM","河邊逛商場看夜景，離舊城區較遠，需搭 Grab","1612497051803357940","13.7258584,100.5099839"],["Somsak Pu-ob","在 Charoen Rat 路，離 ICONSIAM 不遠，需搭 Grab","16901695569718744603","13.7254463,100.4954363"]]]]},
+{d:"11/12 四",th:"暹羅商圈",note:"搭 BTS 到 National Stadium 站。",
+ride:"住處搭 BTS 約 30 分，湯普生博物館到建興酒家步行約 10 分，建興到中央世界步行約 15–20 分。",rain:"大多有室內空間，帶傘應付步行路段即可。",s:[
+["上午","湯普生博物館","從 BTS 站步行可達","16826663638430487320","13.7493569,100.5281613"],
+["中午","建興酒家","同一區，步行前往","11627939264029982890","13.7452080,100.5238980"],
+["下午","中央世界購物商場","在 Chit Lom 站一帶，逛街和休息都方便","14171986354817230340","13.7465337,100.5391488",[["Central Rama 9","在 Rama 9 路，離暹羅較遠，需搭 BTS 轉乘或計程車","2404038713723668543","13.7585954,100.5661774"]]]]},
+{d:"11/13 五",th:"包車一日遊：北攬府",note:"包車從住處出發，司機會接送你到兩個景點和回程。包車費用、時數、是否含過路費和停車費，請事先向車行確認。",
+ride:"住處到 The Erawan Museum 約 30–45 分，兩個景點之間約 25–40 分，暹羅古城回住處約 50–80 分。",rain:"The Erawan Museum 有室內空間。暹羅古城是大範圍戶外園區，雨大時可縮短停留。",s:[
+["上午","The Erawan Museum","出發前請確認營業時間","16162819323840819063","13.6294498,100.5893623"],
+["下午","暹羅古城","園區很大，預留半天，出發前請確認營業時間","3338774114067317447","13.5395781,100.6232352"]]},
+{d:"11/14 六",th:"素坤逸和通羅",note:"Record Bar 離住處較近，晚上回程方便。",
+ride:"BTS 到 Asok 或 Nana，Abandoned Mansion 到 Chenin 約 10–15 分，Chenin 到 Record Bar 約 15–20 分。",rain:"Abandoned Mansion 是戶外，下雨時可換成其他室內的咖啡廳或餐廳。",s:[
+["上午","Abandoned Mansion Bangkok","在 Sukhumvit 14，BTS 到 Asok 或 Nana 周邊","15870122832082825760","13.7352580,100.5601969",[["GLOW coffee","在 Sukhumvit 路上，通羅一帶，離 Record Bar 很近","3556709339955199285","13.7234733,100.5799621"],["Thaipioka","在 Thonglor Soi 1","14078534897909846504","13.7272999,100.5786277"],["Dib Bangkok","在 Sukhumvit 40","4304372662025851268","13.7129126,100.5797653"],["恰圖恰市集 Chatuchak Weekend Market","週六也營業，建議一早去。在北邊，換了之後下面兩站要重排","10516346959717498187","13.7997810,100.5504245"]]],
+["中午","Chenin Restaurant","在 Sukhumvit 31，從上一站搭計程車很快","13740527445722072691","13.7376520,100.5667057",[["Thaipioka","在 Thonglor Soi 1，搭計程車過去","14078534897909846504","13.7272999,100.5786277"],["GLOW coffee","在 Sukhumvit 路上，通羅一帶","3556709339955199285","13.7234733,100.5799621"],["BENKOFF","在 Thonglor 的 NT TOWER","18252664058542019756","13.7315085,100.5811710"]]],
+["晚上","Modern-Day Culture : Record Bar","在 Sukhumvit 63，通羅一帶","8086624585196595373","13.7247232,100.5848045",[["BENKOFF","在 Thonglor 的 NT TOWER","18252664058542019756","13.7315085,100.5811710"],["Route66","在 Rama 9 一帶，離通羅較遠，需搭計程車","10696069871793886312","13.7514844,100.5753316"]]]]},
+];
+var S={},done={},STORE="bkk-done";
+try{done=JSON.parse(localStorage.getItem(STORE)||"{}")}catch(e){}
+function save(){try{localStorage.setItem(STORE,JSON.stringify(done))}catch(e){}}
+function cur(di,si){var p=D[di].s[si],o=[[p[1],p[2],p[3],p[4]]].concat(p[5]||[]);return{p:p,o:o,c:o[S[di+"-"+si]||0]}}
+function taken(di,si,i){var nm=cur(di,si).o[i][0];return D[di].s.some(function(_,j){return j!==si&&cur(di,j).c[0]===nm})}
+function esc(t){return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+function route(di){var q=D[di].s.map(function(_,si){return cur(di,si).c[3]});
+var u="https://www.google.com/maps/dir/?api=1&travelmode=driving&origin="+q[0]+"&destination="+q[q.length-1];
+if(q.length>2)u+="&waypoints="+q.slice(1,-1).join("%7C");return u}
+function day(di){var x=D[di],h='<div class="day-head"><span class="day-date">'+x.d+'</span><span class="day-theme">'+x.th+'</span></div><p class="day-note">'+x.note+'</p><ul>';
+x.s.forEach(function(_,si){var r=cur(di,si),k=di+"-"+si,i=S[k]||0,c=r.c,dn=!!done[k];
+h+='<li class="stop'+(dn?' is-done':'')+'"><input class="stop-check" type="checkbox" data-k="'+k+'" aria-label="已完成：'+esc(c[0])+'"'+(dn?' checked':'')+'><span class="stop-time">'+r.p[0]+'</span><div><div class="stop-name"><a href="'+M+c[2]+'" target="_blank" rel="noopener">'+esc(c[0])+'<span class="sr">（在新分頁開啟）</span></a>'+(i>0?'<span class="alt-tag">替代選項</span>':'')+'</div><div class="stop-desc">'+esc(c[1])+'</div>'+(r.o.length>1?'<button class="swap-btn" type="button" data-k="'+k+'">換一個（'+(i+1)+'/'+r.o.length+'）</button>':'')+'</div></li>'});
+h+='</ul><p class="info"><b>車程（粗估）</b>　'+x.ride+'</p><p class="info"><b>雨天備案</b>　'+x.rain+'</p><a class="route-btn" href="'+route(di)+'" target="_blank" rel="noopener">用 Google 地圖看當天路線<span class="sr">（在新分頁開啟）</span></a>';
+return h}
+var el=document.getElementById("days"),out="";
+D.forEach(function(_,di){out+='<section class="day" id="d'+di+'">'+day(di)+'</section>'});
+out+='<section class="day"><div class="day-head"><span class="day-date">11/15 日</span><span class="day-theme">回程</span></div><div class="callout">13:00 起飛，不排行程。建議 9:00 前後從住處出發，實際時間請依機場和航廈調整。</div></section>';
+el.innerHTML=out;
+el.addEventListener("click",function(e){var b=e.target.closest(".swap-btn");if(!b)return;
+var k=b.getAttribute("data-k"),a=k.split("-"),di=+a[0],si=+a[1],n=cur(di,si).o.length;
+var st=S[k]||0;do{st=(st+1)%n}while(st!==0&&taken(di,si,st));S[k]=st;document.getElementById("d"+di).innerHTML=day(di);
+var nb=document.querySelector('#d'+di+' .swap-btn[data-k="'+k+'"]');if(nb)nb.focus();
+document.getElementById("live").textContent="已換成："+cur(di,si).c[0]});
+el.addEventListener("change",function(e){var c=e.target.closest(".stop-check");if(!c)return;
+var k=c.getAttribute("data-k");if(c.checked)done[k]=1;else delete done[k];save();
+c.closest(".stop").classList.toggle("is-done",c.checked)});
+</script>
+</body>
+</html>
